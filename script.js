@@ -178,8 +178,8 @@ $(document).ready(() => {
 // $('.logout-button.entry').on('click', () => $('.logout > .container').css('margin-left', '0'));
 // $('.logout-button.return').on('click', () => $('.logout > .container').css('margin-left', '-280px'));
 
-// Мой код
 
+// пришлось чуть изменить код, вместо закоментированного выше
 if ($(window).width() > '992') {
 	$('.logout-button.entry').on('click', () => $('.logout > .container').css('margin-left', '0'));
 	$('.logout-button.return').on('click', () => $('.logout > .container').css('margin-left', '-280px'));
@@ -191,9 +191,7 @@ if ($(window).width() <= '768') {
 	$('.logout-button.entry').on('click', () => $('.logout > .container').css('margin-left', '50px'));
 	$('.logout-button.return').on('click', () => $('.logout > .container').css('margin-left', '-200px'));
 };
-
-
-// мой код
+// пришлось чуть изменить код
 
 $('.button.add').on('click', () => toggleAddModal());
 $('.button.manage').on('click', () => toggleManageModal());

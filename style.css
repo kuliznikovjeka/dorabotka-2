@@ -636,11 +636,11 @@ body {
 }
 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 	.manage__custom-row {
 		display:flex
 	}
-}
+} */
 
 .flex-table{
 	align-items: center;
@@ -696,10 +696,25 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+@media (max-width: 1350px){
+	.Dashboard .modal .close-button {
+		margin-right: 10px;
+	}
+}
+@media (max-width: 1185px){
+	.Dashboard .modal .close-button {
+		margin-right: 15px;
+	}
+}
 @media (max-width: 1100px){
 	.Dashboard .modal .close-button {
 		width: 45px;
 		height: 45px;
+	}
+}
+@media (max-width: 425px){
+	.Dashboard .modal .close-button {
+		margin-right: 0px;
 	}
 }
 .Dashboard .modal .button {
@@ -991,11 +1006,10 @@ body {
 }
 @media (max-width: 768px){
 	.Dashboard .modal .Table  {
-		display: block;
-		width: 67%;
+		width: 100%;
 	}
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 .Table tbody,
 .Table tr {
 	display:block;
@@ -1009,7 +1023,7 @@ body {
 	padding:15px 0 15px 0;
 	margin-bottom:15px;
 }
-}
+} */
 
 
 
@@ -1019,19 +1033,20 @@ body {
   width: calc(100% + 20px);
   background: #253238;
   gap: 25px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1350px){
 	.Dashboard .modal .Table-header {
 		margin-bottom: -20px;
 	}
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 	.Dashboard .modal .Table-header {
 		flex-direction:column;
 		row-gap: 285px;
 		width: calc(42% + 20px);
 	}
-}
+} */
 
 .Dashboard .modal .Table-group {
   border-radius: 14px;
@@ -1051,21 +1066,21 @@ body {
 }
 @media (max-width: 768px){
 	.Dashboard .modal .Table-group {
-		outline: none;
+
 	}
 }
 
 .Dashboard .modal .Table-group:first-of-type {
-  width: 1065px;
+  width: 1045px;
 }
 @media (max-width: 1900px){
 	.Dashboard .modal .Table-group:first-of-type  {
-		width: 900px;
+		width: 880px;
 	}
 }
 @media (max-width: 1730px){
 	.Dashboard .modal .Table-group:first-of-type  {
-		width: 580px;
+		width: 560px;
 	}
 }
 @media (max-width: 1385px){
@@ -1075,18 +1090,33 @@ body {
 }
 @media (max-width: 1350px){
 	.Dashboard .modal .Table-group:first-of-type  {
-		width: 425px;
+		width: 405px;
 	}
 }
 @media (max-width: 1185px){
 	.Dashboard .modal .Table-group:first-of-type  {
-		width: 310px;
+		width: 290px;
 	}
 }
 @media (max-width: 768px){
 	.Dashboard .modal .Table-group:first-of-type  {
-		width: 24%;
-		display:block
+		width: 100%;
+		max-width: 540px;
+	}
+}
+@media (max-width: 570px){
+	.Dashboard .modal .Table-group:first-of-type  {
+		width: 70%;
+	}
+}
+@media (max-width: 500px){
+	.Dashboard .modal .Table-group:first-of-type  {
+		width: 100%;
+	}
+}
+@media (max-width: 510px){
+	.Dashboard .modal .Table-group:first-of-type  {
+		min-width: 290px;
 	}
 }
 /* @media (max-width: 525px){
@@ -1098,28 +1128,38 @@ body {
 } */
 
 .Dashboard .modal .Table-group:last-of-type {
-  width: 245px;
+  width: 255px;
+}
+@media (max-width: 1385px){
+	.Dashboard .modal .Table-group:last-of-type  {
+		width: 240px;
+	}
 }
 @media (max-width: 1350px){
 	.Dashboard .modal .Table-group:last-of-type  {
-		width: 175px;
-	}
-}
-@media (max-width: 1185px){
-	.Dashboard .modal .Table-group:last-of-type  {
-		margin-bottom: 15px;
-		width: 140px;
+		width: 185px;
 	}
 }
 @media (max-width: 1185px){
 	.Dashboard .modal .Table-group:last-of-type  {
 		margin-bottom: 15px;
 		margin-right: 20px;
+		width: 150px;
 	}
 }
-@media (max-width: 525px){
+
+@media (max-width: 768px){
 	.Dashboard .modal .Table-group:last-of-type  {
-		width: 95%;
+		margin-bottom: 15px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 510px){
+	.Dashboard .modal .Table-group:last-of-type  {
+		min-width: 115px;
+		width: 100%;
+		max-width: 150px;
 	}
 }
 
@@ -1151,15 +1191,13 @@ body {
 		font-weight: 600;
 	}
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table-group > div:first-child {
-		padding-top:10px;
-}
-	.Dashboard .modal .Table-group > div:not(:last-child) {
-			margin-bottom:42px;
-			font-weight:600;
+@media (max-width: 570px){
+	.Dashboard .modal .Table-group > div  {
+		font-weight: 500;
+		font-size: 16px;
 	}
 }
+
 
 .Dashboard .modal .Table-group > div:not(:last-of-type)::after {
   content: "|";
@@ -1168,11 +1206,7 @@ body {
   top: 0;
   color: #FA7931;
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table-group > div:not(:last-of-type)::after {
-		display:none;
-	}
-}
+
 
 .Dashboard .modal .Table-group th.buttons {
   width: 250px;
@@ -1183,20 +1217,54 @@ body {
   max-height: 100%;
   width: calc(100% + 20px);
   display: block;
-  max-height: 650px;
+  max-height: 450px;
   padding: 0 10px 0 0;
+  overflow-y:scroll;
+
 }
-@media (min-width: 769px){
+@media (max-width: 1350px){
 	.Dashboard .modal .Table tbody {
-		overflow-y:scroll;
+		max-height: 500px;
+	}
+}
+@media (max-width: 1185px){
+	.Dashboard .modal .Table tbody {
+		max-height: 300px;
 	}
 }
 @media (max-width: 768px){
 	.Dashboard .modal .Table tbody {
-		overflow-x:scroll;
-		padding: 0 30px 0 0;
+		max-height: 650px;
 	}
 }
+@media (max-width: 600px){
+	.Dashboard .modal .Table tbody {
+		max-height: 600px;
+	}
+}
+@media (max-width: 500px){
+	.Dashboard .modal .Table tbody {
+		max-height: 550px;
+	}
+}
+@media (max-width: 450px){
+	.Dashboard .modal .Table tbody {
+		max-height: 500px;
+	}
+}
+@media (max-width: 400px){
+	.Dashboard .modal .Table tbody {
+		max-height: 450px;
+	}
+}
+@media (max-width: 350px){
+	.Dashboard .modal .Table tbody {
+		max-height: 380px;
+	}
+}
+
+
+
 
 
 .Dashboard .modal .Table tbody::-webkit-scrollbar {
@@ -1225,11 +1293,11 @@ body {
 		height: 45px;
 	}
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 	.Dashboard .modal .Table tbody tr {
 		width:170px;
 	}
-}
+} */
 
 .Dashboard .modal .Table tbody tr td {
   max-width: 100%;
@@ -1257,12 +1325,7 @@ body {
 		line-height: 16px;
 	}
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table tbody tr td  {
-		display:flex;
-		margin-right:30px;
-	}
-}
+
 
 .Dashboard .modal .Table tbody tr td:not(:last-of-type) {
   background-color: #FA7931;
@@ -1275,57 +1338,34 @@ body {
 }
 @media (max-width: 768px){
 	.Dashboard .modal .Table tbody tr td:not(:last-of-type)  {
-		width: 80%;
-		border-radius: 14px;
-		display:flex;
-		justify-content:center;
-		/* rr */
+		width: 20%;
+		min-width: 60px;
 	}
 }
+
 
 .Dashboard .modal .Table tbody tr td.name, .Dashboard .modal .Table tbody tr td.tour {
   max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table tbody tr td.name, .Dashboard .modal .Table tbody tr td.tour  {
-		width: 80%;
-		max-width: none;
-		border-radius: 14px;
-		display: flex;
-		justify-content: center;
-		/* rr */
-	}
-}
+
 
 .Dashboard .modal .Table tbody tr td:first-of-type {
   border-radius: 14px 0 0 14px;
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table tbody tr td:first-of-type  {
-		border-radius: 14px;
-		display: flex;
-		justify-content: center;
-		/* rr */
-	}
-}
+
 
 .Dashboard .modal .Table tbody tr td:nth-last-of-type(2) {
   border-radius: 0 14px 14px 0;
   padding: 0 5px;
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table tbody tr td:nth-last-of-type(2)  {
-		border-radius: 14px;
-		padding: 15px;
-		min-height:46px;
-		display:flex;
-		justify-content:center;
-		/* rr */
-	}
-}
 
+
+.Dashboard .modal .Table tbody tr td {
+	padding: 5px;
+	margin: -5px 5px;
+}
 .Dashboard .modal .Table tbody tr td.active {
   color: #98EF41;
 }
@@ -1492,6 +1532,12 @@ body {
 	.Dashboard .modal.manage{
 		width: 100%;
 		height: 100%;
+	}
+}
+@media (max-width: 500px){
+	.Dashboard .modal.manage{
+		overflow-y: scroll;
+		overflow-y: hidden;
 	}
 }
 
