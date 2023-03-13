@@ -1055,8 +1055,8 @@ body {
 .Dashboard .modal .Table-group {
   border-radius: 14px;
   margin-top: -80px;
-  height: 77px;
-  outline: #FA7931 4px solid;
+  height: 87px;
+  border: #FA7931 4px solid;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -1068,11 +1068,7 @@ body {
 		height: 45px;
 	}
 }
-@media (max-width: 768px){
-	.Dashboard .modal .Table-group {
 
-	}
-}
 
 .Dashboard .modal .Table-group:first-of-type {
   width: 1045px;
@@ -1106,6 +1102,7 @@ body {
 	.Dashboard .modal .Table-group:first-of-type  {
 		width: 100%;
 		max-width: 540px;
+		height: 47px;
 	}
 }
 @media (max-width: 570px){
@@ -1161,7 +1158,7 @@ body {
 
 @media (max-width: 510px){
 	.Dashboard .modal .Table-group:last-of-type  {
-		min-width: 115px;
+		min-width: 125px;
 		width: 100%;
 		max-width: 150px;
 	}
